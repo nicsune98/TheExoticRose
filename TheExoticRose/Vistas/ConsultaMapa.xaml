@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TheExoticRose.Vistas.ConsultaMapa"
+             BackgroundColor="#D9D9D9"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Picker x:Name="pkInvernadero" Title="Seleccione un Invernadero" TitleColor="Gray" TextColor="Black" HorizontalTextAlignment="Center" BackgroundColor="White" VerticalTextAlignment="Center"/>
+            <Label Text="Ubicacion"/>
+            <Entry Text="Avenida Luis Cordero" x:Name="txtNombreUbicacion"/>
+            <Label Text="Latitud" Margin="0,24,0,0"/>
+            <Entry Text="0.05949358469822472" x:Name="txtLatitud"/>
+            <Label Text="Longitud" Margin="0,24,0,0"/>
+            <Entry Text="-78.13760926449444" x:Name="txtLongitud"/>
+            <Button Text="Navegar" x:Name="btNavegar" Clicked="btNavegar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

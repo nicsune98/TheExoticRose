@@ -22,5 +22,10 @@ namespace TheExoticRose.Vistas
         {
             Navigation.PushAsync(new Usuarios());
         }
+
+        private void btMapa_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new IngresoMapa());
+        }
     }
 }

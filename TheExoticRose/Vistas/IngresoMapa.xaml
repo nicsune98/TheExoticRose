@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TheExoticRose.Vistas.IngresoMapa">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Label Text="Nombre del invernader" TextColor="Black" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtNombre" Placeholder="..." PlaceholderColor="Gray" TextColor="Black" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="Ciudad" TextColor="Black" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtCiudad" Placeholder="..." PlaceholderColor="Gray" TextColor="Black" Grid.Row="1" Grid.Column="1"/>
+                <Label Text="Técnico" TextColor="Black" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtTecnico" Placeholder="..." PlaceholderColor="Gray" TextColor="Black" Grid.Row="2" Grid.Column="1"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

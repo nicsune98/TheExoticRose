@@ -10,7 +10,7 @@
                 <Label x:Name="lblUsuario" Text="User" HorizontalOptions="StartAndExpand" TextColor="White" FontSize="20" VerticalOptions="Center" Grid.Column="0"/>
             </Grid>
             <Button x:Name="btUsuarios" Text="Usuarios" BackgroundColor="White" TextColor="Black" HeightRequest="100" Clicked="btUsuarios_Clicked"/>
-            <Button x:Name="btInvernadero" Text="Mapa" BackgroundColor="White" TextColor="Black" HeightRequest="100"/>
+            <Button x:Name="btMapa" Text="Mapa" BackgroundColor="White" TextColor="Black" HeightRequest="100" Clicked="btMapa_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
