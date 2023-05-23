@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TheExoticRose.Vistas.Usuarios"
+             x:Class="TheExoticRose.Vistas.Invernaderos"
              BackgroundColor="#D9D9D9"
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <StackLayout>
             <Frame BackgroundColor="#005398" Padding="17" CornerRadius="0">
-                <Label Text="Usuarios" HorizontalTextAlignment="Center" TextColor="White" FontSize="16"/>
+                <Label Text="Invernaderos" HorizontalTextAlignment="Center" TextColor="White" FontSize="16"/>
             </Frame>
             <Grid>
                 <Grid.RowDefinitions>
@@ -15,29 +15,29 @@
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="100"/>
-                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="130"/>
                 </Grid.ColumnDefinitions>
                 <Label Text="Nombre" FontSize="16" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" TextColor="#2196F3" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
-                <Label Text="Apellido" FontSize="16" Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" TextColor="#2196F3"/>
-                <Label Text="Correo" FontSize="16" Grid.Row="0" Grid.Column="2" HorizontalOptions="Center" TextColor="#2196F3"/>
+                <Label Text="Técnico" FontSize="16" Grid.Row="0" Grid.Column="1" HorizontalOptions="Center" TextColor="#2196F3"/>
+                <Label Text="Dirección" FontSize="16" Grid.Row="0" Grid.Column="2" HorizontalOptions="Center" TextColor="#2196F3"/>
             </Grid>
-            <ListView x:Name="Lista" BackgroundColor="White">
+            <ListView x:Name="Lista" BackgroundColor="White" ItemSelected="Lista_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <ViewCell.ContextActions>
-                                <MenuItem x:Name="BtEditar" Text="Editar" IsDestructive="False" CommandParameter="{Binding idUsuario}" Clicked="BtEditar_Clicked"/>
-                                <MenuItem x:Name="BtEliminar" Text="Eliminar" IsDestructive="True" CommandParameter="{Binding idUsuario}" Clicked="BtEliminar_Clicked"/>
+                                <MenuItem x:Name="BtEditar" Text="Editar" IsDestructive="False" CommandParameter="{Binding idInvernadero}" Clicked="BtEditar_Clicked"/>
+                                <MenuItem x:Name="BtEliminar" Text="Eliminar" IsDestructive="True" CommandParameter="{Binding idInvernadero}" Clicked="BtEliminar_Clicked"/>
                             </ViewCell.ContextActions>
                             <StackLayout>
                                 <Grid BackgroundColor="#005398">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="100"/>
-                                        <ColumnDefinition Width="100"/>
+                                        <ColumnDefinition Width="130"/>
                                     </Grid.ColumnDefinitions>
-                                    <Label x:Name="lblNombre" Text="{Binding nombreUsuario}" Grid.Row="0" Grid.Column="0" TextColor="Black" BackgroundColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-                                    <Label x:Name="lblApellido" Text="{Binding apellido}" Grid.Row="0" Grid.Column="1" TextColor="Black" BackgroundColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-                                    <Label x:Name="lblEdad" Text="{Binding correo}" Grid.Row="0" Grid.Column="2" TextColor="Black" BackgroundColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Padding="12"/>
+                                    <Label x:Name="lblNombre" Text="{Binding nombreInvernadero}" Grid.Row="0" Grid.Column="0" TextColor="Black" BackgroundColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                                    <Label x:Name="lblEdad" Text="{Binding tecnico}" Grid.Row="0" Grid.Column="1" TextColor="Black" BackgroundColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Padding="12"/>
+                                    <Label x:Name="lblApellido" Text="{Binding direccion}" Grid.Row="0" Grid.Column="2" TextColor="Black" BackgroundColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
                                 </Grid>
                             </StackLayout>
                         </ViewCell>

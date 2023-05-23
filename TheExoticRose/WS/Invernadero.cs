@@ -6,6 +6,7 @@ namespace TheExoticRose.WS
 {
     class Invernadero
     {
+        public int idInvernadero { get; set; }
         public string nombreInvernadero { get; set; }
         public string codigoInvernadero { get; set; }
         public string direccion { get; set; }
