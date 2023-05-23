@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TheExoticRose.Vistas.Menu"
+             BackgroundColor="#D9D9D9"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid BackgroundColor="#005398" HeightRequest="50" Padding="10" ColumnSpacing="0" ColumnDefinitions="*,*,*,*">
+                <Label x:Name="lblUsuario" Text="User" HorizontalOptions="StartAndExpand" TextColor="White" FontSize="20" VerticalOptions="Center" Grid.Column="0"/>
+            </Grid>
+            <Button x:Name="btUsuarios" Text="Usuarios" BackgroundColor="White" TextColor="Black" HeightRequest="100" Clicked="btUsuarios_Clicked"/>
+            <Button x:Name="btInvernadero" Text="Mapa" BackgroundColor="White" TextColor="Black" HeightRequest="100"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

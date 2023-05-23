@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TheExoticRose.Vistas.RegistrarUsuaio"
+             BackgroundColor="#D9D9D9"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Frame BackgroundColor="#005398" Padding="24" CornerRadius="0">
+                <Label Text="REGISTRO DE USUARIOS" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Entry x:Name="txtNombre" Placeholder="Ingrese un Nombre" PlaceholderColor="Gray" TextColor="Black"/>
+            <Entry x:Name="txtApellido" Placeholder="Ingrese un Apellido" PlaceholderColor="Gray" TextColor="Black"/>
+            <Entry x:Name="txtIdentificacion" Placeholder="Ingrese su Identificación" Keyboard="Numeric" PlaceholderColor="Gray" TextColor="Black"/>
+            <Entry x:Name="txtTelefono" Placeholder="Ingrese su Teléfono" Keyboard="Numeric" PlaceholderColor="Gray" TextColor="Black"/>
+            <Entry x:Name="txtCorreo" Placeholder="Ingrese un Correo" Keyboard="Email" PlaceholderColor="Gray" TextColor="Black"/>
+            <Entry x:Name="txtUsuario" Placeholder="Ingrese un Usuario" PlaceholderColor="Gray" TextColor="Black"/>
+            <Entry x:Name="txtContrasena" Placeholder="Ingrese una Contraseña" PlaceholderColor="Gray" TextColor="Black"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btInsertar" Text="INSERTAR" Grid.Row="0" Grid.Column="0" BackgroundColor="#005398" Clicked="btInsertar_Clicked"/>
+                <Button x:Name="btRegresar" Text="REGRESAR" Grid.Row="0" Grid.Column="1" BackgroundColor="#CDCDCD" Clicked="btRegresar_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
